@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Chat WebSocket</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.4.0/sockjs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</head>
+<body onload="disconnect()">
+
+
+<div>
+    <div id="chats">
+        <button id="connect" onclick="connect();">Baglan</button>
+
+        <button id="disconnect" disabled="disabled" onclick="disconnect();">
+            Cikis
+        </button>
+    </div>
+    <br />
+    <div id="conversationDiv">
+        <input type="text" id="text" placeholder="Mesaj.."/>
+        <button id="sendMessage" onclick="sendMessage();">Send</button>
+        <p id="response"></p>
+    </div>
+</div>
+
+</body>
+</html>
